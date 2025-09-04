@@ -156,7 +156,7 @@
   </div>
 <br-bottom-bar>
 <a href=""><span class="icon material-symbols-rounded">home</span></a>
-<a href="https://binarynews.rf.gd/"><span class="icon material-symbols-rounded">feed</span></a>
+<a href="https://binarynews.rf.gd/feed.php"><span class="icon material-symbols-rounded">feed</span></a>
 <a href="Gemini/index.html"><span class="icon material-symbols-rounded">robot</span></a>
          
 </br-bottom-bar>
@@ -211,9 +211,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const nextPeriod = nextDate.toISOString().split("T")[0];
 
-    result.innerHTML = `
+    result.innerHTML = `<center>
       <p>✅ Last Period: <b>${lastPeriod}</b></p>
-      <p>📅 Next Period Expected: <b>${nextPeriod}</b></p>
+      <p>📅 Next Period Expected: <b>${nextPeriod}</b></p></center>
     `;
 
     // Save to history
